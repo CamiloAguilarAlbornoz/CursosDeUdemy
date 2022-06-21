@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----- Estilos -->
+    <style>
+        .zebra {
+            border: 5px dashed black;
+        }
+        .big {
+            font-size: 30px;
+        }
+        .marginTop {
+            display: block;
+            margin-top: 45px;
+        }
+        .resaltado {
+            border-bottom: 2px solid brown;
+        }
+    </style>
+    <!----- jQuery -->
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <!----- Mis Scripts -->
+    <script type="text/javascript" src="./js/selectores.js"></script>
+    <title>Aprendiendo jQuery</title>
+</head>
+<body>
+    <h1>Curso jQuery</h1>
+    <ul>
+        <li><a href="https//:www.google.com" title="Google">Ir a Google</a></li>
+        <li><a href="https//:www.facebook.com" title="Facebook">Ir a Facebook</a></li>
+    </ul>
+    <p id="idRed" class="sin_borde">Ejericicios de jQuery</p>
+    <p id="idYellow" class="zebra">Practicando con selectores</p>
+    <p id="idGreen" class="sin_borde">Quiero ser un parrafo verde</p>
+    <p class="zebra">soy un parrafo blanco</p>
+    <div id="box">
+        <p>Hola soy una caja</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li id="idElemento2" class="resaltado">Elemento 2</li>
+        </ul>
+        <span class="resaltado">Soy un span</span>
+    </div>
+</body>
+</html>

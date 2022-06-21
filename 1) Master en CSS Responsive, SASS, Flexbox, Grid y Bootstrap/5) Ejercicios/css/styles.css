@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lato:wght@100&family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-image: url("../img/lines.png");
+}
+
+.classDivCajaFija {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+}
+
+#idDivCajaAzul {
+    background-color: #00B0F0;
+    border-color: 1px solid #00B0F0;
+    top: 218px;
+}
+
+#idDivCajaRoja {
+    background-color: RGB(251,11,11);
+    border-color: 1px solid RGB(231,115,56);
+    top: 258px;
+}
+
+#idDivCajaVerde {
+    background-color: RGB(19,227,80);
+    border-color: 1px solid RGB(231,115,56);
+    top: 298px;
+}
+
+#idSectionContenedorGeneral {
+    width: 1200px;
+    background-color: white;
+    border-right: 1px solid #00B0F0;
+    border-left: 1px solid white;
+    border-radius: 20px;
+    margin : 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#idHeaderCabecera {
+    width: 100%;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    background-color: #00B0F0;
+    text-align: center;
+}
+
+#idHeaderCabecera h1 {
+    font-size: 70px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /*========================SOMBRAS====================
+                  x   y   difuminado*/
+    text-shadow: 5px 0px 5px #5ec5eb;
+}
+
+#idNavMenu {
+    background-color: black;
+    margin-top: 10px;
+}
+
+#idNavMenu ul li {
+    display: block;
+    float: left;
+    padding: 30px;
+    text-align: center;
+}
+
+#idNavMenu ul li a {
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#idNavMenu ul li a:hover {
+    text-decoration: underline;
+    text-shadow: 5px -5px 5px rgb(128, 128, 128);
+}
+
+#idAsideBarraLateral {
+    display: block;
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#idAsideBarraLateral form label, 
+#idAsideBarraLateral form input{
+    width: 86%;
+    margin: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#idAsideBarraLateral form input[type="submit"] {
+    width: 90%;
+    font-size: 25px;
+    height: 50px;
+    background-color: #00B0F0;
+    color: white;
+}
+
+#idAsideBarraLateral form input {
+    border-radius: 20px;
+    border: 1px solid #00B0F0;
+    height: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#idDivContenido {
+    width: 70%;
+}
+
+#idFooter {
+    width: 100%;
+    background-color: #00B0F0;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 45px;
+    letter-spacing: 1px;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.classDivCuadrilla {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    padding: 10px;
+    width: 46%;
+    display: block;
+    float: left;
+    border: 1px solid white;
+    max-height: 427px;
+}
+
+.classDivCuadrilla:hover,
+#idAsideBarraLateral:hover {
+    box-shadow: 5px 5px 10px #ccc inset;
+}
+
+.classDivCuadrilla h2{   
+    background-image: url("../img/lines.png");
+    border-radius: 20px;
+}
+
+.classDivCuadrilla p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.classDivCuadrilla button {
+    background-color: #00B0F0;
+    border: 1px solid #00B0F0;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.classDivCuadrilla button:hover,
+#idAsideBarraLateral form input[type="submit"]:hover {
+    background-color: #5ec5eb;
+    cursor: pointer;
+    box-shadow: 5px -5px 5px #5ec5eb;
+}
+
+.clearFix {
+    float: none;
+    clear: both;
+}

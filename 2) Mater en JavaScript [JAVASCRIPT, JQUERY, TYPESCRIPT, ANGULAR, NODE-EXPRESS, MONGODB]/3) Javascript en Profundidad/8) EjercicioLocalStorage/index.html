@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/ejercicioLocalstorage.js"></script>
+    <title>Ejercicio Localstorage con Javascript</title>
+</head>
+<body>
+    <h1>Curso Javascript</h1>
+    <hr/>
+    <p>
+        <h2>Ingresar Pelicula</h2>
+        <form id="idFormMovies">
+            <p>
+                <label for="titleMovie">Ingresa el titulo de la película</label><br/>
+                <input type="text" name="titleMovie" id="idTitleMovie"/>
+            </p>
+            <p>
+                <input type="submit" value="Guardar"/>
+            </p>
+        </form>
+    </p>
+    <hr/>
+    <p>
+        <h2>Borrar Película</h2>
+        <form id="idFormDelete">
+            <p>
+                <label for="titleDeleteMovie">Ingresa el titulo de la película</label><br/>
+                <input type="text" name="titleDeleteMovie" id="idTitleDeleteMovie"/>
+            </p>
+            <p>
+                <input type="submit" value="Eliminar"/>
+            </p>
+        </form>
+    </p>
+    <hr/>
+    <p>
+        <table border="2" id="idTableShowMovies">
+            <tr>
+                <th>Películas</th>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>

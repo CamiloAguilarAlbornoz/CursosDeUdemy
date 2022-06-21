@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lato:wght@100&family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#aIdBoton {
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border:5px solid rgb(2, 74, 2);
+    /*Hace el cambio al borde en una transicion de n segundos*/
+    transition: border 500ms, background-color 4s, border-radius 7s;
+}
+
+#aIdBoton:hover {
+    border-radius: 35px;
+    background-color: orangered;
+    border: 5px solid red;   
+}
+
+#idDivCaja {
+    width: 250px;
+    height: 250px;
+    background-color: lightseagreen;
+    color: white;
+    border: 5px solid black;
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    /*ANIMACION*/
+    animation-name: desplazamiento;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/*CREAR ANIMACION*/
+@keyframes desplazamiento {
+    0% {
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50% {
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        /*CIRCULO*/
+        border-radius: 999px;
+    }
+    75% {
+        background-color: rebeccapurple;
+    }
+    77% {
+        border: 10px dashed black;
+    }
+    100% {
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}

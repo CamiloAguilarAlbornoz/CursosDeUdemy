@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con JavaScript</title>
+    <!----- Estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link id="idLinkTheme" rel="stylesheet" type="text/css" href="./css/green.css">
+    <!----- jQuery desde CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!----- Momentjs para fechas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js" integrity="sha512-L6Trpj0Q/FiqDMOD0FQ0dCzE0qYT2TFpxkIpXRSWlyPvaLNkGEMRuXoz6MC5PrtcbXtgDLAAI4VFtPvfYZXEtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!----- Pluggin Validacion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <!----- jQuery UI -->
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.0/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.0/jquery-ui.structure.min.css"/>
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.0/jquery-ui.theme.min.css"/>
+    <script type="text/javascript" src="./js/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+    <!----- Mis Scripts-->
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/contactScript.js"></script>
+</head>
+
+<body>
+    <!---- Botones para cambiar colores ----->
+    <div id="idDivSelectorTheme">
+        <div id="idDivToGreen"></div>
+        <div id="idDivToBlue"></div>
+        <div id="idDivToRed"></div>
+    </div>
+    <!----- La caja blanca que contiene la pagina-->
+    <section id="idSectionGlobal">
+        <!----- Cabecera de la página ------->
+        <header>
+            <div id="idDivLogo">
+                <h1>Proyecto JS</h1>
+            </div>
+            <!---- Arregla los flotantes -->
+            <div class="classDivClearFix"></div>
+            <!----- Menu de navegación ----->
+            <nav id="idUlMenu">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./clock.html">Reloj</a></li>
+                    <li><a href="./about.html">Sobre mi</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!----- Contenido ---->
+        <section id="idSectionContent">
+            <!----- Contenedor de artículos ----->
+            <div id="idDivBox">
+                <!----- Cargar formulario de contacto --->
+                <h2>Contacto</h2>
+                <form id="idFormContact" action="" method="post">
+                    <label for="lblName">Nombre</label>
+                    <input type="text" name="lblName" data-validation="alphanumeric" id=""/>
+
+                    <label for="lblLastNames">Apellidos</label>
+                    <input type="text" name="lblLastNames" data-validation="alphanumeric" id=""/>
+
+                    <label for="lblEmail">Email</label>
+                    <input type="text" name="lblEmail" data-validation="email" id=""/>
+
+                    <label for="lblGender">Sexo</label>
+                    <select name="lblGender" data-validation="required" id="">
+                        <option value="Male">Masculino</option>
+                        <option value="Female">Femenino</option>
+                    </select>
+
+                    <label for="lblBirthDate">Fecha de nacimiento</label>
+                    <input type="text" name="lblBirthDate" data-validation="date" data-validation-format="dd-mm-yyyy" id=""/>
+
+                    <label for="lblAge">Edad</label>
+                    <input type="number" name="lblAge" data-validation="number" id=""/>
+
+                    <input type="submit" value="Enviar"/>
+                </form>
+            </div>
+            <aside id="idAsidebar">
+                <div id="idDivAbout">
+                    <h4>
+                        <span>¿Quien soy?</span>
+                    </h4>
+                    <img src="./img/caracol.jpg" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id felis nisi. Mauris et erat vel
+                        tortor porta auctor in a turpis.
+                    </p>
+                </div>
+                <div id="idDivLogin">
+                    <h4>
+                        <span>Identificate</span>
+                    </h4>
+                    <form>
+                        <label for="inputName">
+                            Nombre
+                        </label>
+                        <input type="text" name="inputName" id="idInputName">
+                        <label for="inputEmail">
+                            Correo
+                        </label>
+                        <input type="email" name="inputEmail" id="idInputEmail">
+                        <label for="inputPassword">
+                            Contraseña
+                        </label>
+                        <input type="password" name="inputPassword" id="idInputPassword">
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+            </aside>
+            <div class="classDivClearFix"></div>
+        </section>
+    </section>
+    <footer>
+        Master de JavaScript de Victor Robles &copy;
+        <a href="#" class="classAUp">Ir arriba</a>
+    </footer>
+</body>
+
+</html>

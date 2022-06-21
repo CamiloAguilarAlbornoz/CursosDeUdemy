@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----- jQuery -->
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <!----- Mis Scripts -->
+    <script type="text/javascript" src="./js/ajax.js"></script>
+    <title>Efectos con jQuery</title>
+    <!----- Estilos -->
+    <style>
+        #idDivData {
+            border: 2px solid green;
+            width: 250px;
+            height: 250pxs;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Curso jQuery</h1>
+    <hr/>
+    <h3>Formulario con métodos post y get</h3>
+    <p>
+        <form action="https://reqres.in/api/users" method="post" id="idForm">
+            <table>
+                <tr>
+                    <td>Ingresar el Nombre : </td>
+                    <td>
+                        <input type="text" name="first_name" id=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ingresar la Web : </td>
+                    <td>
+                        <input type="text" name="web" id=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Enviar"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </p>
+    <hr/>
+    <h3>Formulario con método ajax</h3>
+    <p>
+        <form action="https://reqres.in/api/users" method="post" id="idFormAjax">
+            <table>
+                <tr>
+                    <td>Ingresar el Nombre : </td>
+                    <td>
+                        <input type="text" name="first_name" id="idFirstName"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ingresar la Web : </td>
+                    <td>
+                        <input type="text" name="web" id="idWeb"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Enviar"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </p>
+    <hr/>
+    <p>
+        <div id="idDivData"></div>
+    </p>
+</body>
+</html>

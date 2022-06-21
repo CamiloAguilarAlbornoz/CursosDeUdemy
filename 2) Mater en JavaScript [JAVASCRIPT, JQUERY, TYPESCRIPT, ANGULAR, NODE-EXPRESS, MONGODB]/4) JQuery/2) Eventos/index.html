@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----- jQuery -->
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <!----- Mis Scripts -->
+    <script type="text/javascript" src="./js/eventos.js"></script>
+    <title>Eventos con jQuery</title>
+    <!----- Estilos -->
+    <style>
+        #box {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background: yellow;
+            transition: 300ms all;
+        }
+        #secondBox {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background: yellow;
+            transition: 300ms all;
+        }
+        input {
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+        #idData {
+            border: 4px dashed black;
+            padding: 10px;
+            width: 250px;
+            height: 50px;
+            margin-top: 10px;
+            display: none;
+        }
+        #idFollowMe {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: block;
+            background: yellow;
+            opacity: 0.5;
+            border-radius: 999px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Curso jQuery</h1>
+    <div id="idFollowMe"></div>
+    <p>
+        <form>
+            <input type="text" id="id_name"/>
+        </form>
+    </p>
+    <p>
+        <div id="idData"></div>
+    </p>
+    <p>
+        <div id="box">
+            Soy una caja
+        </div>
+    </p>
+    <p>
+        <div id="secondBox">
+            yo tambien
+        </div>
+    </p>
+</body>
+</html>

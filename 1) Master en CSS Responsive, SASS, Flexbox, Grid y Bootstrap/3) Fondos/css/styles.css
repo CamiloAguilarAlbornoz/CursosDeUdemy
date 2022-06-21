@@ -1,0 +1,30 @@
+body {
+    /*background-image: url(../img/fondo.jpg);
+    background-size: 100%, 100%;
+    background-attachment: fixed;
+    background-position: left, bottom;
+    color: white;*/
+    color: black;
+}
+
+#idDivCaja {
+    border: 5px solid black;
+    padding: 10px;
+    background-image: url(../img/fondo.png);
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+#idDivCaja:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+    text-indent: 15px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}

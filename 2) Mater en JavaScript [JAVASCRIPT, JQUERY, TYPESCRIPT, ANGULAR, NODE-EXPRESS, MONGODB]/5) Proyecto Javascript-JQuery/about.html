@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con JavaScript</title>
+    <!----- Estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link id="idLinkTheme" rel="stylesheet" type="text/css" href="./css/green.css">
+    <!----- jQuery desde CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!----- jQuery UI -->
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.0/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.0/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.0/jquery-ui.theme.min.css" />
+    <script type="text/javascript" src="./js/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+    <!----- Mis Scripts -->
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/aboutScript.js"></script>
+</head>
+
+<body>
+    <!---- Botones para cambiar colores ----->
+    <div id="idDivSelectorTheme">
+        <div id="idDivToGreen"></div>
+        <div id="idDivToBlue"></div>
+        <div id="idDivToRed"></div>
+    </div>
+    <!----- La caja blanca que contiene la pagina-->
+    <section id="idSectionGlobal">
+        <!----- Cabecera de la página ------->
+        <header>
+            <div id="idDivLogo">
+                <h1>Proyecto JS</h1>
+            </div>
+            <!---- Arregla los flotantes -->
+            <div class="classDivClearFix"></div>
+            <!----- Menu de navegación ----->
+            <nav id="idUlMenu">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./clock.html">Reloj</a></li>
+                    <li><a href="./about.html">Sobre mi</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!----- Contenido ---->
+        <section id="idSectionContent">
+            <!----- Contenedor de artículos ----->
+            <div id="idDivBox">
+                <!----- Cargar acordeon --->
+                <h2>Sobre mí</h2>
+                <div id="idDivAcordeon">
+
+                    <h3>¿Quienes somos?</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id felis nisi. Mauris et erat
+                            vel
+                            tortor porta auctor in a turpis.
+                        </p>
+                    </div>
+
+                    <h3>Nuestros servicios</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id felis nisi. Mauris et erat
+                            vel
+                            tortor porta auctor in a turpis.
+                        </p>
+                    </div>
+
+                    <h3>Nuestros clientes</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id felis nisi. Mauris et erat
+                            vel
+                            tortor porta auctor in a turpis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <aside id="idAsidebar">
+                <div id="idDivAbout">
+                    <h4>
+                        <span>¿Quien soy?</span>
+                    </h4>
+                    <img src="./img/caracol.jpg" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id felis nisi. Mauris et erat vel
+                        tortor porta auctor in a turpis.
+                    </p>
+                </div>
+                <div id="idDivLogin">
+                    <h4>
+                        <span>Identificate</span>
+                    </h4>
+                    <form>
+                        <label for="inputName">
+                            Nombre
+                        </label>
+                        <input type="text" name="inputName" id="idInputName">
+                        <label for="inputEmail">
+                            Correo
+                        </label>
+                        <input type="email" name="inputEmail" id="idInputEmail">
+                        <label for="inputPassword">
+                            Contraseña
+                        </label>
+                        <input type="password" name="inputPassword" id="idInputPassword">
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+            </aside>
+            <div class="classDivClearFix"></div>
+        </section>
+    </section>
+    <footer>
+        Master de JavaScript de Victor Robles &copy;
+        <a href="#" class="classAUp">Ir arriba</a>
+    </footer>
+</body>
+
+</html>

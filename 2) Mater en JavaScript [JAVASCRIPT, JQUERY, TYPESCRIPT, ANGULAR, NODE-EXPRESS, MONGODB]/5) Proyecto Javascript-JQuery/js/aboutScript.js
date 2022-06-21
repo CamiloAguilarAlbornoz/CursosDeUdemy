@@ -1,0 +1,6 @@
+'use strict'
+
+$(() => {
+
+    $('#idDivAcordeon').accordion();
+});

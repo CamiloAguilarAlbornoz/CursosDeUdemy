@@ -1,0 +1,18 @@
+#idDivLogo {
+    background: #CA3413;
+}
+
+#idUlMenu ul li:hover {
+    background: #CA3413;
+}
+
+.classAReadMore {
+    background: #CA3413;
+}
+
+/*Fondo de la página*/
+body {
+    background: url('../img/rojo.jpg');
+    /*Para que al hacer scroll, la imagen de fondo quede estática*/
+    background-attachment: fixed;
+}

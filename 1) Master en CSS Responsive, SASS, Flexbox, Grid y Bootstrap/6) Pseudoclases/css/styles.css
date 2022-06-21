@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lato:wght@100&family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+ul li {
+    font-size: 20px;
+}
+
+/*Selecciona el primer li*/
+ul li:first-child {
+    color: orangered;
+    font-weight: bold;
+}
+
+/*Selecciona el tercer li*/
+ul li:nth-child(3) {
+    color: yellow;
+}
+
+/*Selecciona el ultimo li*/
+ul li:last-child {
+    color: aqua;
+    font-weight: bold;
+}
+
+#idAonlyDeMiAmiga {
+    font-size: 30px;
+    color: lightsalmon;
+}
+
+/*Se aplica cuando he visitado un link*/
+#idAonlyDeMiAmiga:visited {
+    color: red;
+}
+
+#idAonlyDeMiAmiga:hover {
+    color: blue;
+}
+
+/*Se aplica cuando este oprimiento un elemento HTML*/
+#idAonlyDeMiAmiga:active {
+    color: green;
+}
+
+input[type="text"] {
+    color: black;
+    width: 300px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 4px solid red;
+}
+
+input[type="text"]:hover {
+    border: 4px solid blue;
+}
+
+input[type="text"]:focus {
+    border: 4px dashed green;
+}

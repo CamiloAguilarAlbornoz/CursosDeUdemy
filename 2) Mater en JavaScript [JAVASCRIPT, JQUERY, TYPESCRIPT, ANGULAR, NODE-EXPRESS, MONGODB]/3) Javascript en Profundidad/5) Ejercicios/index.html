@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/ejercicio.js"></script>
+    <title>Ejercicio DOM, Eventos y Funciones con Javascript</title>
+</head>
+<body>
+    <h1>Curso Javascript</h1>
+    <p>
+        <form id="form-datos" onsubmit="return false">
+            <p>
+                <label for="nombre-persona">Ingrese su Nombre : </label><br/>
+                <input type="text" name="nombre-persona" id="input-nombre"/>
+            </p>
+            <p>
+                <label for="apellido-persona">Ingrese sus Apellidos : </label><br/>
+                <input type="text" name="apellido-persona" id="input-apellido"/>
+            </p>
+            <p>
+                <label for="edad-persona">Ingrese su Edad : </label><br/>
+                <input type="text" name="edad-persona" id="input-edad"/> 
+            </p>
+            <p>
+                <input type="submit" value="Enviar" id="btn-enviar">
+            </p>
+        </form>
+    </p>
+    <table id="tab-show" border="2">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+        </tr>
+    </table>
+</body>
+</html>

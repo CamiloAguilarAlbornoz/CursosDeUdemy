@@ -1,0 +1,18 @@
+#idDivLogo {
+    background: #1F87C4;
+}
+
+#idUlMenu ul li:hover {
+    background: #1F87C4;
+}
+
+.classAReadMore {
+    background: #1F87C4;
+}
+
+/*Fondo de la página*/
+body {
+    background: url('../img/cielo.jpg');
+    /*Para que al hacer scroll, la imagen de fondo quede estática*/
+    background-attachment: fixed;
+}

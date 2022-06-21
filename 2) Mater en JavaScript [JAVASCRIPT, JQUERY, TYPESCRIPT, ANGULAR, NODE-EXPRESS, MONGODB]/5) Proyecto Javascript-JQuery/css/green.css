@@ -1,0 +1,18 @@
+#idDivLogo {
+    background: #235E3D;
+}
+
+#idUlMenu ul li:hover {
+    background: #235E3D;
+}
+
+.classAReadMore {
+    background: #235E3D;
+}
+
+/*Fondo de la página*/
+body {
+    background: url('../img/hojas.jpg');
+    /*Para que al hacer scroll, la imagen de fondo quede estática*/
+    background-attachment: fixed;
+}

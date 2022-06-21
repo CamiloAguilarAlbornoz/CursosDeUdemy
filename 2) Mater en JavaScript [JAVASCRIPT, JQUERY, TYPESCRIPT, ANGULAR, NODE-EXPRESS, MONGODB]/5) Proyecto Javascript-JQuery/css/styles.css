@@ -1,0 +1,276 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+/*Util para que no coloque todo a la izquierda o derecha en los float*/
+.classDivClearFix {
+    float: none;
+    clear: both;
+}
+
+/*Da color a la pagina y la posiciona al centro*/
+#idSectionGlobal {
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: white;
+    padding: 25px;
+    /*Da sombra a la caja que es la página*/
+    box-shadow: 0px 0px 0px 2px #ccc;
+}
+
+/*El logo con el h1*/
+#idDivLogo {
+    font-family: Verdana, Arial;
+    font-size: 28px;
+    letter-spacing: 4px;
+    /*Altura de la linea*/
+    line-height: 75px;
+    color: white;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;
+    /*Convierte en mayusculas todo el texto*/
+    text-transform: uppercase;
+}
+
+/*Estilos del menú*/
+#idUlMenu {
+    font-family: Helvetica, Arial;
+    background: #333;
+    width: 100%;
+    /*Convierte en mayusculas todo el texto*/
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/*Todos los ul que estén dentro de #idUlMenu */
+#idUlMenu ul {
+    line-height: 46px;
+    list-style: none;
+}
+
+/*Todos los li que estén en los ul que estén dentro de #idUlMenu */
+#idUlMenu ul li {
+    height: 46px;
+    /*Pone los elementos uno al lado del otro*/
+    display: inline-block;
+    transition: all 300ms;
+}
+
+/*Todos los a que estén dentro de #idUlMenu */
+#idUlMenu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*Div con todos los Posts*/
+#idDivPosts {
+    /*Porcentaje del contenedor*/
+    width: 60%;
+    float: left;
+    font-family: Helvetica, Arial;
+}
+
+/*Estilos de los artículos*/
+.classArticlePost {
+    padding: 7px;
+}
+
+/*Titulo de los post*/
+h2 {
+    font-family: Helvetica, Arial;
+    font-size: 30px;
+    color: #333;
+}
+
+/*Fecha de los post*/
+.classArticlePost .classSpanDate {
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+
+/*Parrafo del post*/
+.classArticlePost p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+/*Botón de leer más del post*/
+.classAReadMore {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px;
+    float: auto;
+    margin-bottom: 20px;
+}
+
+/*Barra lateral*/
+#idAsidebar {
+    font-family: Helvetica, Arial;
+    width: 31%;
+    float: right;
+}
+
+/*Titulos dentro de la barra lateral*/
+#idAsidebar h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    /*Se usa para repetir un patrón, en este caso una imagen*/
+    background: url('../img/lines.png') repeat-x;
+}
+
+/*Contenedor de los titulos de la barra lateral*/
+#idAsidebar h4 span {
+    background: white;
+    padding: 5px;
+}
+
+/*Imagenes de la barra lateral*/
+#idAsidebar img {
+    width: 100%;
+}
+
+/*Parrafos de la barra lateral*/
+#idAsidebar p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+select {
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+form input[type="submit"] {
+    background: #ccc;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+footer {
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+
+.bx-wrapper, .bx-viewport {
+    height: 250px !important;
+}
+
+#idDivSelectorTheme {
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.50);
+    width: 50px;
+    height: 100px;
+}
+
+#idDivToGreen,
+#idDivToBlue,
+#idDivToRed {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#idDivToGreen {
+    background: #235E3D;
+}
+
+#idDivToBlue {
+    background: #1F87C4;
+}
+
+#idDivToRed {
+    background: #CA3413;
+}
+
+.classAUp {
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+#idDivBox {
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+
+#idDivAcordeon {
+    margin-top: 20px;
+}
+
+#idDivClock {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+    color: #333;
+    border: 5px dashed #333;
+    width: 30%;
+    padding: 30px;
+    margin: 0px auto;
+}
+
+#idFormContact {
+    width: 50%;
+    margin-top: 15px;
+    font-family: Helvetica, Arial;
+}
+
+#idFormContact label {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-error {
+    /*float: right;*/
+    font-size: 11px;
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
